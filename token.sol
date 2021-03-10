@@ -16,7 +16,7 @@ contract token.sol is ERC20, ERC20Detailed {
     /**
      * @dev Constructor that gives msg.sender all of existing tokens.
      */
-    constructor () public ERC20Detailed("token.sol", "JGP", 18) {
+    constructor () public ERC20Detailed("token.sol", "tks", 18) {
         _mint(msg.sender, 100000000 * (10 ** uint256(decimals())));
     }
 }
